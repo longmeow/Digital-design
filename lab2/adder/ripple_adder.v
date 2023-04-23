@@ -1,9 +1,11 @@
+`include "lab2/adder/full_adder.v"
 
 module Adder #(
-  parameter N = 32
+    parameter N = 32
 ) (
-  input [N-1:0] A, B,
-  output [N:0] R
+    input  [N-1:0] A,
+    B,
+    output [  N:0] R
 );
   wire [N:0] C;
 
@@ -21,5 +23,5 @@ module Adder #(
   endgenerate
 
   assign C[0] = 1'b0;
-  assign R[N] = C[N];  
+  assign R[N] = C[N];
 endmodule

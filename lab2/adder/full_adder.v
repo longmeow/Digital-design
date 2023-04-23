@@ -1,7 +1,10 @@
 module FullAdder (
-    input a, b,
-    input ci, r, co
+    input  a,
+    input  b,
+    input  ci,
+    output r,
+    output co
 );
-    assign r = a^ b ^ ci;
-    assign co = a&ci + a&b + b&ci;
+  assign r  = a ^ b ^ ci;
+  assign co = a & ci + a & b + b & ci;
 endmodule

@@ -1,5 +1,5 @@
 `timescale 10ps/1ps
-`include "ripple_adder.v"
+`include "lab2/adder/ripple_adder.v"
 
 // 32-bit adder
 module Adder_tb;
