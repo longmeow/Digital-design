@@ -1,24 +1,3 @@
-
-
-/*
-	Project name: 
-		Switches to 7Segment Display
-		
-	Description:
-		This project will light up the DE1-SoC board 7Segment Display according to the board's switches positions.
-		It should work on other boards according to the number of switches present.
-		The default size of the input bus is 4, and it will display a hexadecimal value between 0x0 and 0xF (decimal 15).
-		
-		{dot, a,b,c,d,e,f,g} = hex_7seg_decoder(in[3:0]); (the 7Segment Display gets the value of the switch)
-		
-	Author: 
-		Ovidiu Plugariu / www.ovisign.com
-		
-    Disclaimer: 
-		Please note that all the source codes are provided "as-is" with no warranty for further usage.
-		For further support or modification, please send an email to ovidiu@ovisign.com
-*/
-
 module hex_7seg_decoder
    // Parameters section
    #( parameter COMMON_ANODE_CATHODE = 0) // 0 for common Anode / 1 for common cathode

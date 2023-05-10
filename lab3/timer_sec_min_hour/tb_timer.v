@@ -1,20 +1,3 @@
-
-/*
-	Project name: 
-		Binary Coded Decimal Timer to 7Segment display
-		
-	Description:
-		Testbench for Binary Coded Decimal Timer to 7Segment display
-		
-	Author: 
-		Ovidiu Plugariu / www.ovisign.com
-		
-    Disclaimer: 
-		Please note that all the source codes are provided "as-is" with no warranty for further usage.
-		For further support or modification, please send an email to ovidiu@ovisign.com
-*/
-
-
 `timescale 1ns/1ps
 
 module tb_timer();	

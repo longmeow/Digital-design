@@ -4,7 +4,7 @@ module Adder #(
     parameter N = 32
 ) (
     input  [N-1:0] A,
-    B,
+    input  [N-1:0] B,
     output [  N:0] R
 );
   wire [N:0] C;

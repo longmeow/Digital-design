@@ -1,25 +1,3 @@
-
-/*
-	Project name: 
-		Binary Coded Decimal Timer to 7Segment display
-
-	Description:
-		This project will implement a Timer and display the Binary Coded Decimal value on the six DE1-SoC board 7 segment.
-		The maximum displayable time is 99h: 59min: 59s .
-		The timer uses binary counters and the Double Dabble algorithm to convert between the binary values and Binary Coded Decimals. 
-        If your board doesn't have 6x 7Segment displays you can use fewer.
-			
-    Resources: https://realpars.com/bcd/
-	
-	Author: 
-		Ovidiu Plugariu / www.ovisign.com
-		
-    Disclaimer: 
-		Please note that all the source codes are provided "as-is" with no warranty for further usage.
-		For further support or modification, please send an email to ovidiu@ovisign.com
-*/
-
-
 module timer
     // Parameters section
     #( parameter CLOCK_FREQ = 32'd50_000_000 // 50MHz frequency
