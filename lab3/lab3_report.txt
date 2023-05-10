@@ -1,0 +1,59 @@
+Các module cần phải thiết kế:
+    0. Bộ đếm (Tạo xung 1s)
+    1. Đếm giây 
+    2. Đếm phút
+    3. Đếm giờ
+    4. Đếm ngày
+    5. Đếm tháng
+    6. Đếm năm
+    7. Giải mã 7 thanh
+    8. Tính số ngày trong tháng
+Yêu cầu chức năng:
+    - Global synchronous
+    - Reset ngày, tháng
+    - Xác định được số ngày trong tháng, năm nhuận
+-----------------------------------------------------------------------------------------------------------------------
+Xác định SPEC của từng khối chức năng
+-------------------------------------
+0. Bộ đếm
+--------------
+Input: clk
+Output: Xung 1 giây
+-------------------------------------
+1. Đếm giây
+------------
+Input: clk, rst_n
+Output: 6'b sec, increase_min
+-------------------------------------
+2. Đếm phút
+----------
+Input: clk, rst_n, increase_min
+Output: 6'b min, increase_hour
+-------------------------------------
+3. Đếm giờ 
+Input: clk, rst_n, increase_hour
+Output: 5'b hour, increase_day
+-------------------------------------
+4. Đếm ngày
+Input: clk, rst_n, increase_day, rst_day
+Output: 5'b day, increase_month
+-------------------------------------
+8. Tính số ngày trong tháng
+Input: 4b' month, 14'b year
+Output: 2b' rst_day (28, 29, 30, 41)
+-------------------------------------
+5. Đếm tháng
+Input: clk, rst_n, increase_month, rst_month
+Output: 4b' month, increase_year 
+-------------------------------------
+6. Đếm năm
+Input: clk, rst_n, increase_year
+Output: 14'b year
+-------------------------------------
+7. Giải mã 7 thanh
+Input: sec / min / hour / day / month / year
+Output: BCD
+-------------------------------------
+
+
+
